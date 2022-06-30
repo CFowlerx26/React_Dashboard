@@ -1,13 +1,18 @@
-// Creating "h1" component
+// Creating Header
 const Header = () => {
-  return <h1>Commence Dashboard Creation!</h1>;
+  return (
+    <div className="Header">
+      <h1>Commence Dashboard Creation!</h1>
+    </div>
+  );
 };
 
 // Creating "Reviews" component
 const Reviews = () => {
   return (
     <div className="reviews">
-      <h2>1,281</h2>
+      <h2>Reviews</h2>
+      <h3>1,281</h3>
     </div>
   );
 };
@@ -16,25 +21,79 @@ const Reviews = () => {
 const AverageRating = () => {
   return (
     <div className="averageRating">
-      <h2>1,281</h2>
+      <h2>Average Rating</h2>
+      <ul className="ratingList">
+        <li>1,281</li>
+      </ul>
     </div>
   );
 };
 
-// Create "Sentiment Analysis" component
+// Creating "Sentiment Analysis" component
+const SentimentAnalysis = () => {
+  return (
+    <div className="sentimentAnalysis">
+      <h2>Sentiment Analysis</h2>
+      <ul className="analysistList">
+        <li>1,281</li>
+        <li>756</li>
+        <li>532</li>
+      </ul>
+    </div>
+  );
+};
 
-//* Main component to nest divs in
-class Dash extends React.Component {
+// Creating "Website Visitors" component
+const WebsiteVisitors = () => {
+  return (
+    <div className="websiteVisitors">
+      <h2>Website Visitors</h2>
+    </div>
+  );
+};
+
+// Creating "Menu Bar" component
+const MenuBar = () => {
+  return (
+    <div className="menubar">
+      <h2>Menu</h2>
+      <ul className="list">
+        <li>Dashboard</li>
+        <br></br>
+        <br></br>
+        <li>Widget</li>
+        <br></br>
+        <br></br>
+        <li>Reviews</li>
+        <br></br>
+        <br></br>
+        <li>Customers</li>
+        <br></br>
+        <br></br>
+        <li>Online Analysis</li>
+        <br></br>
+        <br></br>
+        <li>Settings</li>
+      </ul>
+    </div>
+  );
+};
+
+// Creating a component called "App"
+class App extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <Header />
-        <div.reviews />
+        <Reviews />
         <AverageRating />
-        <Board />
+        <SentimentAnalysis />
+        <WebsiteVisitors />
+        <MenuBar />
       </div>
     );
   }
 }
 
-ReactDOM.render(<Dash />, document.getElementById("main"));
+ReactDOM.render(<App />, document.getElementById("root"));
+//* Brackets are used when rendering the method </>
