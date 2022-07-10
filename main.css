@@ -2,8 +2,106 @@
     --switch1: #3a3e4e;
     --switch2: #71698b;
     --switch3: #8142fd;
-    --switch4: #985eff;
-    --switch5: #e7cfcd;
-    --switch6: #33dbc6;
-    --switch7: #988bc8;
+    --switch4: #e7cfcd;
+    --switch5: #33dbc6;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight:100;
+    color:var(--switch4);
+    background-image: linear-gradient(var(--switch1), var(--switch2),var(--switch1))
+  }
+  h2 {
+    color:var(--switch5);
+  }
+
+  .Header{
+    display: flex;
+    justify-content: center;
+    color:var(--switch4);
+    font-size:xx-large;
+    font-weight: 100;
+    font-family: cursive;
+}
+.list{
+    display: block;
+    margin-top: 100px;
+    margin-left: -150px;
+    text-align: left;
+    list-style-type: none;
+}
+.reviewsList,.ratingList,.analysistList{
+    display: block;
+    margin-top: 100px;
+    margin-left: -280px;
+    list-style-type: none;
+    text-align: center;
+    font-size: x-large;
+}
+.reviews{
+    display: flex;
+    text-indent: 88px;
+    margin-top: 40px;
+    margin-left: 400px;
+   
+    height: 400px;
+    width: 320px;
+    border: 2px solid var(--switch2);
+    border-radius: 15px;
+    opacity: 0.90;
+    background-image: linear-gradient(var(--switch3), var(--switch4))
+    
+}
+  .averageRating{
+    display: flex;
+    text-indent: 60px;
+    margin-top: -403px;
+    margin-left: 750px;
+    
+    height: 400px;
+    width: 320px;
+    opacity: 0.90;
+    border: 1px solid var(--switch2);
+    border-radius: 15px;
+    background-image: linear-gradient(var(--switch3), var(--switch4))
+}
+.websiteVisitors{
+    display: flex;
+    text-indent: 40px;
+    font-size: 20px;
+    text-align:right;
+    margin-top: 100px;
+    margin-left: 400px;
+    height: 400px;
+    width: 1020px;
+    opacity: 0.90;
+    border: 1px solid   var(--switch2);
+    border-radius: 15px;
+    background-image: linear-gradient(var(--switch3), var(--switch4))
+}
+.sentimentAnalysis{
+    display: flex;
+    text-indent: 100px;
+    margin-top: -400px;
+    margin-left: 1100px;
+    height: 400px;
+    width: 320px;
+    opacity: 0.90;
+    border: 1px solid var(--switch2);
+    border-radius: 15px;
+    background-image: linear-gradient(var(--switch3), var(--switch4))
+}
+.menubar {
+    display: flex;
+    text-indent: 40px;
+    margin-top: -950px;
+    margin-right: 900px;
+    margin-left: 40px;
+    height: 950px;
+    width: 100%;
+    opacity: 0.40;
+    background-color:var(--switch1); 
+    border-radius: 20px;
 }

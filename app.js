@@ -12,7 +12,9 @@ const Reviews = () => {
   return (
     <div className="reviews">
       <h2>Reviews</h2>
-      <h3>1,281</h3>
+      <ul className="reviewsList">
+        <li>1,281</li>
+      </ul>
     </div>
   );
 };
@@ -23,7 +25,7 @@ const AverageRating = () => {
     <div className="averageRating">
       <h2>Average Rating</h2>
       <ul className="ratingList">
-        <li>1,281</li>
+        <li>4.6</li>
       </ul>
     </div>
   );
@@ -35,9 +37,9 @@ const SentimentAnalysis = () => {
     <div className="sentimentAnalysis">
       <h2>Sentiment Analysis</h2>
       <ul className="analysistList">
-        <li>1,281</li>
-        <li>756</li>
-        <li>532</li>
+        <li>960</li>
+        <li>122</li>
+        <li>321</li>
       </ul>
     </div>
   );
